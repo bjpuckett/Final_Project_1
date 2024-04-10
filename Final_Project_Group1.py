@@ -1,2 +1,2 @@
-Morale = 0
+Alignment = 0
 PC_Name = 
