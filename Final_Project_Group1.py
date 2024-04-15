@@ -1,11 +1,11 @@
 alignment = 0
+# Creates a selection menu for the user
+def print_menu():
+    print("\nMain Menu")
+    print("1. Start Game")
+    print("2. Exit")
 
 while(True):
-    # Creates a selection menu for the user
-    def print_menu():
-        print("\nMain Menu")
-        print("1. Start Game")
-        print("2. Exit")
     print_menu()
     menu_options = input("Select 1 or 2: ")
 
@@ -16,5 +16,9 @@ while(True):
         break
         
     # Exits the program
-    else:
+    elif(menu_options == '2'):
         break
+    
+    # Catches any input besides 1 or 2 and promts the user to try again. 
+    else:
+        print("Invlaid input. Try again.")
