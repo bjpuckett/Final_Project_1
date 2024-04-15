@@ -1,6 +1,7 @@
 alignment = 0
 
 while(True):
+    # Creates a selection menu for the user
     def print_menu():
         print("\nMain Menu")
         print("1. Start Game")
