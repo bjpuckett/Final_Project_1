@@ -1,10 +1,19 @@
 alignment = 0
 
+while(True):
+    def print_menu():
+        print("\nMain Menu")
+        print("1. Start Game")
+        print("2. Exit")
+    print_menu()
+    menu_options = input("Select 1 or 2: ")
 
-def print_menu():
-    print("\nMain Menu")
-    print("1. Start Game")
-    print("2. Exit")
-
-player_character = input("What is your name? ")
-print(player_character)
+    # Selects option 1 and asks the user to enter a name.
+    if(menu_options == '1'):
+        player_character = input("What is your name? ")
+        print(player_character)
+        break
+        
+    # Exits the program
+    else:
+        break
