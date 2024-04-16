@@ -1,7 +1,8 @@
 alignment = 0
 companions = []
 towns = {}
-# Creates a selection menu for the user
+
+# Creates a selection menu for the user.
 def print_menu():
     print("\nMain Menu")
     print("1. Start Game")
@@ -21,12 +22,13 @@ while(True):
     elif(menu_options == '2'):
         break
     
-    # Catches any input besides 1 or 2 and promts the user to try again. 
+    # Catches any input besides 1 or 2 and prompts the user to try again. 
     else:
         print("Invalid input. Try again.")
 
-def story_1(): #defining 1st story function/choice
-    print("\n Story text")
+# Defining 1st story function/choice.
+def story_1():
+    print("\nStory text")
     print("1: 1st option")
     print("2: 2nd option")
 
@@ -43,5 +45,7 @@ while(True):
         break
     else:
         print("Invalid input.")
-print(alignment)#testing alignment changes properly
+
+# Testing alignment changes properly.
+print(alignment)
         
