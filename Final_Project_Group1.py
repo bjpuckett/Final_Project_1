@@ -1,4 +1,6 @@
 alignment = 0
+companions = []
+towns = {}
 # Creates a selection menu for the user
 def print_menu():
     print("\nMain Menu")
@@ -21,4 +23,25 @@ while(True):
     
     # Catches any input besides 1 or 2 and promts the user to try again. 
     else:
-        print("Invlaid input. Try again.")
+        print("Invalid input. Try again.")
+
+def story_1(): #defining 1st story function/choice
+    print("\n Story text")
+    print("1: 1st option")
+    print("2: 2nd option")
+
+while(True):
+    story_1()
+    choice_1 = input("Make your choice: ")
+
+    if(choice_1 == '1'):
+        alignment =+ 1
+        break
+    
+    elif(choice_1 == '2'):
+        alignment =- 1
+        break
+    else:
+        print("Invalid input.")
+print(alignment)#testing alignment changes properly
+        
