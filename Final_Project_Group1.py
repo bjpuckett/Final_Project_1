@@ -41,7 +41,6 @@ def endings():
     print("1: lastchoice1")
     print("2: lastchoice2")
 
-
 while(True):
     print_menu()
     menu_options = input("Select 1 or 2: ")
