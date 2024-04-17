@@ -17,7 +17,7 @@ def story_1():
 
 def story_2():
     print("\nStory text")
-    print("1: 1st option",(", ").join(companions)")
+    print("1: 1st option",(", ").join(companions))
     print("2: 2nd option")
 
 def story_3():
