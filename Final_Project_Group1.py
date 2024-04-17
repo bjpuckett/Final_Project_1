@@ -1,6 +1,6 @@
 alignment = 0
-companions = []
-towns = {}
+companions = ["Bison","Becky"] 
+towns = {"town 1": "Bob's Village",}
 
 # Creates a selection menu for the user.
 def print_menu():
@@ -38,10 +38,14 @@ while(True):
 
     if(choice_1 == '1'):
         alignment =+ 1
+        companions.append("Bob")
+        print("Bob has joined the party")
         break
     
     elif(choice_1 == '2'):
         alignment =- 1
+        towns_removed = towns.pop("town 1")
+        print("Bob's town was destroyed")
         break
     else:
         print("Invalid input.")
