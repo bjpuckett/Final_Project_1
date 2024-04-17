@@ -52,4 +52,33 @@ while(True):
 
 # Testing alignment changes properly.
 print(alignment)
+
+# testing alingment system and placeholder for endings
+def endings():
+    print("\nStory text")
+    print("1: lastchoice1")
+    print("2: lastchoice2")
+
+while(True):
+    endings()
+    lastchoice_1 = input("Make your choice: ")
+
+    if(lastchoice_1 == '1'):
+            print("Ends the story with chosen 1")
+
+    elif(lastchoice_1 == '2'):
+            print("ends the story with chosen story 2")
+
+    # basic alignment check to determine ending        
+    while(True):
+        if(alignment == 1):
+            print("The world has imploded")
+            break
+        
+        elif(alignment == -1):
+            print("The world remains the same")
+            break
+    break
+    
+
         
