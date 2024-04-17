@@ -1,6 +1,6 @@
 alignment = 0
 companions = ["Bison","Becky"] 
-towns = {"town 1": "Corinth","town 2":"Beelzebub","town 3:" "Bob's Village","town 4": "Tom's House",}
+towns = {"town 1": "Corinth","town 2":"Beelzebub","town 3": "Bob's Village","town 4": "Tom's House","town 5": "Billybob Home"}
 
 # Creates a selection menu for the user.
 def print_menu():
