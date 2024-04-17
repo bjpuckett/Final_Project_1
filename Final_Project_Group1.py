@@ -1,6 +1,6 @@
 alignment = 0
 companions = ["Bison","Becky"] 
-towns = {"town 1": "Corinth","town 2":"Beelzebub","town 3:" "Bob's Village",}
+towns = {"town 1": "Corinth","town 2":"Beelzebub","town 3:" "Bob's Village","town 4": "Tom's House",}
 
 # Creates a selection menu for the user.
 def print_menu():
@@ -96,7 +96,7 @@ while(True):
     
     elif(choice_2 == '2'):
         alignment =- 1
-        towns_removed = towns.pop("town 1")
+        towns_removed = towns.pop("town 2")
         print("Bob's town was destroyed")#placeholder
         break
     elif(choice_2) == "exit": #option to exit
@@ -118,7 +118,7 @@ while(True):
     
     elif(choice_3 == '2'):
         alignment =- 1
-        towns_removed = towns.pop("town 1")
+        towns_removed = towns.pop("town 3")
         print("Bob's town was destroyed")#placeholder
         break
     elif(choice_3) == "exit": #option to exit
@@ -141,7 +141,7 @@ while(True):
     
     elif(choice_4 == '2'):
         alignment =- 1
-        towns_removed = towns.pop("town 1")
+        towns_removed = towns.pop("town 4")
         print("Bob's town was destroyed")#placeholder
         break
     elif(choice_4) == "exit": #option to exit
