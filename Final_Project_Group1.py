@@ -83,7 +83,26 @@ while(True):
 
 # Testing alignment changes properly.
 print(alignment)
+#Second story choice
+while(True):
+    story_2()
+    choice_2 = input("Make your choice: ")
 
+    if(choice_2 == '1'):
+        alignment =+ 1
+        companions.append("Bob")
+        print("Bob has joined the party")#placeholder
+        break
+    
+    elif(choice_2 == '2'):
+        alignment =- 1
+        towns_removed = towns.pop("town 1")
+        print("Bob's town was destroyed")#placeholder
+        break
+    elif(choice_2) == "exit": #option to exit
+        exit()
+    else:
+        print("Invalid input.")
 while(True):
     endings()
     lastchoice_1 = input("Make your choice: ")
