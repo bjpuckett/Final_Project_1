@@ -76,6 +76,8 @@ while(True):
         towns_removed = towns.pop("town 1")
         print("Bob's town was destroyed")
         break
+    elif(choice_1) == "exit": #option to exit
+        exit()
     else:
         print("Invalid input.")
 
