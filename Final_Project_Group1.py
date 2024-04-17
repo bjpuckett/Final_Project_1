@@ -148,6 +148,28 @@ while(True):
         exit()
     else:
         print("Invalid input.")
+
+print(alignment)
+#Fifth story choice 
+while(True):
+    story_5()
+    choice_5 = input("Make your choice: ")
+
+    if(choice_5 == '1'):
+        alignment =+ 1
+        companions.append("Billybob")
+        print("Bob has joined the party")#placeholder
+        break
+    
+    elif(choice_5 == '2'):
+        alignment =- 1
+        towns_removed = towns.pop("town 5")
+        print("Bob's town was destroyed")#placeholder
+        break
+    elif(choice_5) == "exit": #option to exit
+        exit()
+    else:
+        print("Invalid input.")
         
 print(alignment)
 
