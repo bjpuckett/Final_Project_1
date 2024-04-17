@@ -90,7 +90,7 @@ while(True):
 
     if(choice_2 == '1'):
         alignment =+ 1
-        companions.append("Bob")
+        companions.append("Bill")
         print("Bob has joined the party")#placeholder
         break
     
@@ -112,7 +112,7 @@ while(True):
 
     if(choice_3 == '1'):
         alignment =+ 1
-        companions.append("Bob")
+        companions.append("Ted")
         print("Bob has joined the party")#placeholder
         break
     
@@ -135,7 +135,7 @@ while(True):
 
     if(choice_4 == '1'):
         alignment =+ 1
-        companions.append("Bob")
+        companions.append("Tom")
         print("Bob has joined the party")#placeholder
         break
     
