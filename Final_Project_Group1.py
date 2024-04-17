@@ -103,7 +103,55 @@ while(True):
         exit()
     else:
         print("Invalid input.")
+
+print(alignment)
+#Third story choice
 while(True):
+    story_3()
+    choice_3 = input("Make your choice: ")
+
+    if(choice_3 == '1'):
+        alignment =+ 1
+        companions.append("Bob")
+        print("Bob has joined the party")#placeholder
+        break
+    
+    elif(choice_3 == '2'):
+        alignment =- 1
+        towns_removed = towns.pop("town 1")
+        print("Bob's town was destroyed")#placeholder
+        break
+    elif(choice_3) == "exit": #option to exit
+        exit()
+    else:
+        print("Invalid input.")
+        
+print(alignment)
+
+#Fourth story choice 
+while(True):
+    story_4()
+    choice_4 = input("Make your choice: ")
+
+    if(choice_4 == '1'):
+        alignment =+ 1
+        companions.append("Bob")
+        print("Bob has joined the party")#placeholder
+        break
+    
+    elif(choice_4 == '2'):
+        alignment =- 1
+        towns_removed = towns.pop("town 1")
+        print("Bob's town was destroyed")#placeholder
+        break
+    elif(choice_4) == "exit": #option to exit
+        exit()
+    else:
+        print("Invalid input.")
+        
+print(alignment)
+while(True):
+    # ending choice
     endings()
     lastchoice_1 = input("Make your choice: ")
 
@@ -113,7 +161,7 @@ while(True):
     elif(lastchoice_1 == '2'):
             print("ends the story with chosen story 2")
 
-    # basic alignment check to determine ending        
+    # basic alignment check to determine the ending        
     while(True):
         if(alignment == 1):
             print("The world has imploded")
