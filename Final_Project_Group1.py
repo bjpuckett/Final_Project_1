@@ -157,7 +157,7 @@ while(True):
 
     if(choice_5 == '1'):
         alignment =+ 1
-        companions.append("Tom")
+        companions.append("Tam")
         print("Bob has joined the party")#placeholder
         break
     
