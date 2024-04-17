@@ -1,6 +1,6 @@
 alignment = 0
 companions = ["Bison","Becky"] 
-towns = {"town 1": "Corinth","town 2":"Beelzebub","town 3:" "Bob's Village","town 4": "Tom's House",}
+towns = {"town 1": "Corinth","town 2":"Beelzebub","town 3": "Bob's Village","town 4": "Tom's House","town 5": "Billybob Home"}
 
 # Creates a selection menu for the user.
 def print_menu():
@@ -66,13 +66,13 @@ while(True):
     choice_1 = input("Make your choice: ")
 
     if(choice_1 == '1'):
-        alignment =+ 1
+        alignment += 1
         companions.append("Bob")
         print("Bob has joined the party")
         break
     
     elif(choice_1 == '2'):
-        alignment =- 1
+        alignment -= 1
         towns_removed = towns.pop("town 1")
         print("Bob's town was destroyed")
         break
@@ -89,13 +89,13 @@ while(True):
     choice_2 = input("Make your choice: ")
 
     if(choice_2 == '1'):
-        alignment =+ 1
+        alignment += 1
         companions.append("Bill")
         print("Bob has joined the party")#placeholder
         break
     
     elif(choice_2 == '2'):
-        alignment =- 1
+        alignment -= 1
         towns_removed = towns.pop("town 2")
         print("Bob's town was destroyed")#placeholder
         break
@@ -111,13 +111,13 @@ while(True):
     choice_3 = input("Make your choice: ")
 
     if(choice_3 == '1'):
-        alignment =+ 1
+        alignment += 1
         companions.append("Ted")
         print("Bob has joined the party")#placeholder
         break
     
     elif(choice_3 == '2'):
-        alignment =- 1
+        alignment -= 1
         towns_removed = towns.pop("town 3")
         print("Bob's town was destroyed")#placeholder
         break
@@ -134,17 +134,40 @@ while(True):
     choice_4 = input("Make your choice: ")
 
     if(choice_4 == '1'):
-        alignment =+ 1
+        alignment += 1
         companions.append("Tom")
         print("Bob has joined the party")#placeholder
         break
     
     elif(choice_4 == '2'):
-        alignment =- 1
+        alignment -= 1
         towns_removed = towns.pop("town 4")
         print("Bob's town was destroyed")#placeholder
         break
     elif(choice_4) == "exit": #option to exit
+        exit()
+    else:
+        print("Invalid input.")
+        
+print(alignment)
+
+#Fifth story choice 
+while(True):
+    story_5()
+    choice_5 = input("Make your choice: ")
+
+    if(choice_5 == '1'):
+        alignment += 1
+        companions.append("Billybob")
+        print("Bob has joined the party")#placeholder
+        break
+    
+    elif(choice_5 == '2'):
+        alignment -= 1
+        towns_removed = towns.pop("town 5")
+        print("Bob's town was destroyed")#placeholder
+        break
+    elif(choice_5) == "exit": #option to exit
         exit()
     else:
         print("Invalid input.")
@@ -156,10 +179,13 @@ while(True):
     lastchoice_1 = input("Make your choice: ")
 
     if(lastchoice_1 == '1'):
-            print("Ends the story with chosen 1")
+        print("Ends the story with chosen 1")
 
     elif(lastchoice_1 == '2'):
-            print("ends the story with chosen story 2")
+        print("ends the story with chosen story 2")
+
+    elif(lastchoice_1) == "exit": #option to exit
+        exit()
 
     # basic alignment check to determine the ending        
     while(True):
