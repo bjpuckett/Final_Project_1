@@ -1,5 +1,5 @@
 alignment = 0
-player_character = Tav
+player_character = "Tav"
 companions = ["Bison","Becky"] 
 towns = {"town 1": "Corinth","town 2":"Beelzebub","town 3": "Bob's Village","town 4": "Tom's House","town 5": "Billybob Home"}
 
