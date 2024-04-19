@@ -1,5 +1,5 @@
 alignment = 0
-player_character = "Tav"
+player_character = "Def"
 companions = ["Bison","Becky"] 
 towns = {"town 1": "Corinth","town 2":"Beelzebub","town 3": "Bob's Village","town 4": "Tom's House","town 5": "Billybob Home"}
 
@@ -49,8 +49,9 @@ while(True):
     # Selects option 1 and asks the user to enter a name.
     if(menu_options == '1'):
         player_character = input("What is your name? ")
-        print(player_character)
-        break
+        if player_character.strip():  # Check if the input is not an empty string after removing leading/trailing spaces
+            print(player_character)
+            break
         
     # Exits the program
     elif(menu_options == '2'):
