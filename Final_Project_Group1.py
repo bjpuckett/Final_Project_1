@@ -71,14 +71,13 @@ while(True):
 
     if(choice_1 == '1'):
         alignment += 1
-        companions.append("Bob")
-        print("Bob has joined the party")
+        print("The people of the town look at you with thanks in their eyes. Corinth moving forward is able to rebuild, and maintain their place in this world with a renewed vigor.")
         break
     
     elif(choice_1 == '2'):
         alignment -= 1
         towns_removed = towns.pop("town 1")
-        print("Bob's town was destroyed")
+        print("As you walk away from the town of Corinth, you think on all the hardships you just saved yourself and the world from by leaving the town to its fate.")
         break
     elif(choice_1) == "exit": #option to exit
         exit()
