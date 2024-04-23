@@ -11,7 +11,7 @@ def print_menu():
 
 # Defining story functions/choices.
 def story_1():
-    print("\nWith a deep breath,", player_character, "reaches out to the Troika and makes his choice.\nA warm light envelops his hands as the gift of Celestial healing , and whispers of ancient tongues fill his mind, granting him the powers of Mental Manipulation into his being. ")
+    print("\nWith a deep breath,", player_character, "reaches out to Dominaris and accepts the mission.\nA warm light envelops his hands as the gift of Heroes Blessing, and whispers of ancient tongues fill his mind, granting him the powers of Mental Manipulation into his being. ")
     print("\n",player_character,"is teleported to a path that  leads him to a village on the brink of despair.\nThe village almost looks like it is in shambles. The eyes or the villages look like they have lost all sense of purpose and hope. A sickness has taken hold, one that no medicine can cure.\nThe villagers eye him fear, ",player_character,"does look pretty scary, perhaps thinking he is a raider.")
     print("1: Seeing that people are in need and wanting to be just and ease their pain use Celestial Healing  to cure the villagers, potentially revealing his divine gifts to all.")
     print("2: Use Mental Manipulation to delve into the villagers’ minds, seeking the source of their affliction and attempting to free them from its grasp.")
@@ -49,9 +49,10 @@ while(True):
 
     # Selects option 1 and asks the user to enter a name.
     if(menu_options == '1'):
+        print("\nIn the land of Troika, where the shadows of conflict loom large and the echoes of divine intervention resonate through the ages, our journey begins with a choice that will shape the fate of not only our protagonist but the very fabric of this world. Dominaris the god of Troika summons his judge.")
         player_character = input("What is your name? ")
         if player_character.strip():  # Check if the input is not an empty string after removing leading/trailing spaces
-            print(player_character)
+            print("Meet",player_character,"a figure veiled in mystery, whose destiny intertwines with the threads of celestial powers and mortal strife. Dominaris tells you about Troika, a realm fraught with turmoil and uncertainty, and makes a decision that will set the wheels of fate in motion.\nDominaris tells ", player_character, "what he expects by appointing you as his judge.")
             break
         
     # Exits the program
