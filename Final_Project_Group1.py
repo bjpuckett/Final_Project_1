@@ -19,14 +19,18 @@ def story_1():
 def story_2():
     print("\nYou leave the village headed East toward the capital city of Cathedralis. The village chief explained that the church called Conclave of Sanctification reigns supreme over the land of Troika.\nThe church originally were worshipers of Plegathon, but slowly began to change, abandoning Plegathon and creating their own God to worship.\nThe Conclave of Sanctification began a holy war against the demi-humans around 13 years ago, deeming them as unholy abominations. The Vatican mercilessly persecutes any non-human species and those who support them.")
     print("\nYour journey to Cathedralis you enter a forest. You have been traveling through the forest for five days.\n You are hating yourself for not asking to take some kind of beast for transportation, you hear a loud commotion. You hear the sound of metal clashing against metal and a frightening scream.\nYou quickly run to inspect what is going on. You surprisingly find yourself at the end of the forest in a beautiful valley. You scan the area and you find what alarmed you.\nYou spot two people engaged in mortal combat. One person is a human, who looks to be dressed in some type of clerical robes bleeding on the ground crawling potentially on the verge of death.\nThe human is crying to you to save him. The other is a being who resembles a large lizard clad in bright red armor. The lizard looks at you and raises his axe prepared to deal a death blow to a defenseless human.")
-    print("\n1:You cast heal on the defenseless human and immediately go into battle. You are remarkably calm about raising your sword towards the intimidating lizard. You remember about the Heroes blessing that Troika gave to you. One of the powers of that blessing called (10,000 Arms) allowed you to learn fighting techniques from 10,000 combat specialists throughout time.  Your weapons clash violently. The lizard is a very capable fighter. It wields the heavy axe as if it were a mere dagger. The lizard's heavy blows are backing you down. He hits you with an overhead strike which you block but the sheer force brings you to take a knee. The lizard raises his axe in preparation to deliver the final blow. As the axe begins its descent you pull out a small dagger and stab the lizard through the food causing the axe to alter its course.\nThe axe hits the ground, and the lizard lets out a loud cry. You stand up and stab the lizard killing it. You cast heal on yourself and the priestly-looking figure.")
-    print("\n2:You cast Mental Manipulation on the lizard seeking to gain more information because you realize sometimes things are not always what they seem. Confused that he can hear your thoughts lowers his axe.\nYou learn that the man before you is an inquisitor of the Conclave of Sanctification who has just murdered an entire village of demi-humans unprovoked.\nThe lizard had been tracking him when he finally caught up with him in the valley you see. Peering into the inquisitor's mind you confirm all that the lizard said was true and more. Such horrific atrocities the inquisitor committed in the name of the Vatican and Beezlebub. You nod to the lizard and with a giant swing of his axe, splits the inquisitor in half.")
+    print("\n1: Cast Heal on Human!")
+    print("\n2: Cast Mental Manipulation on Lizard")
 
 def story_3():
     print("\nAs the party continues their journey toward Cathedralis, they encounter a checkpoint manned by the Conclave of Sanctification's guards. You explain who you are, and the quest given to you by Dominaris.\n You soon realize that this was a mistake. The energy of the conversation changes between you, the guards, and Seraphim Wrathborne. \nThe guards immediately take up fighting stances and cast binding magic on you. HERETIC! HERETIC! HERETIC! The guards start shouting. You look to Seraphim Wrathborne in disbelief, eyes searching for some type of answer, but you find nothing but rage and shock on his face.\n  Despite your efforts to explain your mission, you are accused of being a sympathizer of the demi-humans and branded a heretic against the church for talking about another god. As tensions rise you feel your anger and disbelief spilling over.")
     print("\n1: Fight!\n")
     print("\n2: Peacefully Comply\n")
 
+def story_3_version_2():
+    print("\nAs the party continues their journey toward Cathedralis, they encounter a checkpoint manned by the Conclave of Sanctification's guards. The guards see you with Emberton Draconis the lizard and immediately raise their weapons. \nYou explain who you are, and the quest given to you by Dominaris. You soon realize that this was a mistake. The guards are not listening at all.  The guards immediately take up fighting stances and cast binding magic on you. \nHERETIC! HERETIC! HERETIC! The guards start shouting.  Despite your efforts to explain your mission, you are accused of being a sympathizer of the demi-humans and branded a heretic against the church for talking about another god. \nAs tensions rise you feel your anger and disbelief spilling over.")
+    print("\n1: Fight!\n")
+    print("\n2: Peacefully Comply\n")
 
 def story_4():
     print("\nStory text")
@@ -95,12 +99,14 @@ while(True):
     if(choice_2 == '1'):
         alignment += 1
         companions.append("Seraphim Wrathborne")
-        print("You learn that the priest is a warrior for the church called an inquisitor, Seraphim Wrathborne He was heading to the capital city when he was attacked by the lizard. He tells you his name is Damien and joins you as you head toward the capital city Cathedralis")
+        print("\nYou cast heal on the defenseless human and immediately go into battle. You are remarkably calm about raising your sword towards the intimidating lizard. You remember about the Heroes blessing that the Dominaris gave to you. One of the powers of that blessing called (10,000 Arms) allowed you to learn fighting techniques from 10,000 combat specialists throughout time.  Your weapons clash violently. The lizard is a very capable fighter. It wields the heavy axe as if it were a mere dagger. The lizard's heavy blows are backing you down. He hits you with an overhead strike which you block but the sheer force brings you to take a knee.\nThe lizard raises his axe in preparation to deliver the final blow. As the axe begins its descent you pull out a small dagger and stab the lizard through the food causing the axe to alter its course.\nThe axe hits the ground, and the lizard lets out a loud cry. You stand up and stab the lizard killing it.") 
+        print("\nYou cast heal on yourself and the priestly-looking figure.You learn that the priest is a warrior for the church called an inquisitor. He was heading to the capital city when he was attacked by the lizard. He tells you his name is Seraphim Wrathborne and joins you as you head toward the capital city Cathedralis")
         break
     
     elif(choice_2 == '2'):
         alignment -= 1
         companions.append("Emberton Draconis")
+        print("You cast Mental Manipulation on the lizard seeking to gain more information because you realize sometimes things are not always what they seem. Confused that he can hear your thoughts lowers his axe. You learn that the man before you is an inquisitor of the Conclave of Sanctification who has just murdered an entire village of demi-humans unprovoked.\nThe lizard had been tracking him when he finally caught up with him in the valley you see. Peering into the inquisitor's mind you confirm all that the lizard said was true and more. Such horrific atrocities the inquisitor committed in the name of the Conclave of Sanctification and Beezlebub.\nYou nod to the lizard and with a giant swing of his axe, splits the inquisitor in half.")
         print("The lizard tells you his name is Emberton Draconis and joins you on your quest as you head towards Cathedralis")#placeholder
         break
     elif(choice_2) == "exit": #option to exit
@@ -111,27 +117,49 @@ while(True):
 print(alignment)
 #Third story choice
 while(True):
-    story_3()
-    choice_3 = input("Make your choice: ")
+    if(choice_2 == '1'):
+        story_3()
+        choice_3 = input("Make your choice: ")
 
+        if(choice_3 == '1'):
+            alignment += 1
+            companions.append("Ted")
+            print("Fueled by righteous anger, you choose to fight and defy the guards and Seraphim Wrathborne, refusing to submit to their unjust authority and treatment of you so far. Enough is enough. \nYou charge the guards first deeming that they are probably the easier opponents. Despite your efforts, you find yourself overwhelmed by the sheer number and ferocity of your adversaries.\n Despite landing several powerful blows and fighting with Gods blessing, you are ultimately overpowered by the combined strength of the guards and Seraphim Wrathborne. \nBound and restrained, you are dragged away to face the consequences of your choices. Your treatment is driving you to hate the church.")#placeholder
+            break
+    
+        elif(choice_3 == '2'):
+            alignment -= 1
+            towns_removed = towns.pop("town 3")
+            print("Recognizing the futility of resistance in the face of overwhelming force, you choose to calm down and try to pursue a diplomatic solution. \nYou tell yourself that King will be more reasonable once you speak with him in person.\n With a steady resolve, you allow yourself to be escorted to the dungeons, where you plan to peacefully await the opportunity to clear up the misconceptions surrounding their arrest ")#placeholder
+            break
+        elif(choice_3) == "exit": #option to exit
+            exit()
+        else:
+            print("Invalid input.")
 
-    if(choice_3 == '1'):
-        alignment += 1
-        companions.append("Ted")
-        print("Fueled by righteous anger, you choose to fight and defy the guards and Seraphim Wrathborne, refusing to submit to their unjust authority and treatment of you so far. Enough is enough. \nYou charge the guards first deeming that they are probably the easier opponents. Despite your efforts, you find yourself overwhelmed by the sheer number and ferocity of your adversaries.\n Despite landing several powerful blows and fighting with Gods blessing, you are ultimately overpowered by the combined strength of the guards and Seraphim Wrathborne. \nBound and restrained, you are dragged away to face the consequences of your choices. Your treatment is driving you to hate the church.")#placeholder
-        break
-   
-    elif(choice_3 == '2'):
-        alignment -= 1
-        towns_removed = towns.pop("town 3")
-        print("Recognizing the futility of resistance in the face of overwhelming force, you choose to calm down and try to pursue a diplomatic solution. \nYou tell yourself that King will be more reasonable once you speak with him in person.\n With a steady resolve, you allow yourself to be escorted to the dungeons, where you plan to peacefully await the opportunity to clear up the misconceptions surrounding their arrest ")#placeholder
-        break
-    elif(choice_3) == "exit": #option to exit
-        exit()
-    else:
-        print("Invalid input.")
-       
-print(alignment)
+    elif(choice_2 == '2'):
+        story_3_version_2()
+        story_3_version_2_choice = input("Make your choice: ")
+
+        if(story_3_version_2_choice == '1'):
+            alignment += 1
+            companions.append("Ted")
+            print("Fueled by righteous anger, you choose to fight and defy the guards, refusing to submit to their unjust authority and treatment of you and Emberton Draconis. \nEnough is enough! You charge the guards first deeming that they are probably the easier opponents. \nDespite your efforts, your party find themselves overwhelmed by the sheer number and ferocity of your adversaries. Despite landing several powerful blows and fighting with Gods blessing, you are ultimately overpowered by the combined strength of the guards and inquisitors. \nBound and restrained, you and Emberton Draconis are dragged away to face the consequences of your choices. Your treatment is driving you to hate the church.")#placeholder
+            break
+    
+        elif(story_3_version_2_choice == '2'):
+            alignment -= 1
+            towns_removed = towns.pop("town 3")
+            print("Recognizing the futility of resistance in the face of overwhelming force, you choose to calm down and try to pursue a diplomatic solution. \nYou tell yourself that King will be more reasonable once you speak with him in person. With a steady resolve, you allow yourself to be escorted to the dungeons, where you plan to peacefully await the opportunity to clear up the misconceptions surrounding their arrest.\n You assure Emberton Draconis that everything will be ok and you will clear things up and speak on his behalf.")#placeholder
+            break
+        elif(choice_3) == "exit": #option to exit
+            exit()
+        else:
+            print("Invalid input.")
+
+        
+    print(alignment)
+
 
 
 #Fourth story choice
@@ -204,4 +232,3 @@ while(True):
             print("The world remains the same")
             break
     break
-
