@@ -23,9 +23,10 @@ def story_2():
     print("\n2:You cast Mental Manipulation on the lizard seeking to gain more information because you realize sometimes things are not always what they seem. Confused that he can hear your thoughts lowers his axe.\nYou learn that the man before you is an inquisitor of the Conclave of Sanctification who has just murdered an entire village of demi-humans unprovoked.\nThe lizard had been tracking him when he finally caught up with him in the valley you see. Peering into the inquisitor's mind you confirm all that the lizard said was true and more. Such horrific atrocities the inquisitor committed in the name of the Vatican and Beezlebub. You nod to the lizard and with a giant swing of his axe, splits the inquisitor in half.")
 
 def story_3():
-    print("\nStory text")
-    print("1: 1st option")
-    print("2: 2nd option")
+    print("\nAs the party continues their journey toward Cathedralis, they encounter a checkpoint manned by the Conclave of Sanctification's guards. You explain who you are, and the quest given to you by Dominaris.\n You soon realize that this was a mistake. The energy of the conversation changes between you, the guards, and Seraphim Wrathborne. \nThe guards immediately take up fighting stances and cast binding magic on you. HERETIC! HERETIC! HERETIC! The guards start shouting. You look to Seraphim Wrathborne in disbelief, eyes searching for some type of answer, but you find nothing but rage and shock on his face.\n  Despite your efforts to explain your mission, you are accused of being a sympathizer of the demi-humans and branded a heretic against the church for talking about another god. As tensions rise you feel your anger and disbelief spilling over.")
+    print("\n1: Fight!\n")
+    print("\n2: Peacefully Comply\n")
+
 
 def story_4():
     print("\nStory text")
@@ -93,14 +94,14 @@ while(True):
 
     if(choice_2 == '1'):
         alignment += 1
-        companions.append("Damien")
-        print("You learn that the priest is a warrior for the church called an inquisitor. He was heading to the capital city when he was attacked by the lizard. He tells you his name is Damien and joins you as you head toward the capital city Cathedralis")
+        companions.append("Seraphim Wrathborne")
+        print("You learn that the priest is a warrior for the church called an inquisitor, Seraphim Wrathborne He was heading to the capital city when he was attacked by the lizard. He tells you his name is Damien and joins you as you head toward the capital city Cathedralis")
         break
     
     elif(choice_2 == '2'):
         alignment -= 1
-        companions.append("Talon")
-        print("The lizard tells you his name is Talon and joins you on your quest as you head towards Cathedralis")#placeholder
+        companions.append("Emberton Draconis")
+        print("The lizard tells you his name is Emberton Draconis and joins you on your quest as you head towards Cathedralis")#placeholder
         break
     elif(choice_2) == "exit": #option to exit
         exit()
@@ -113,25 +114,28 @@ while(True):
     story_3()
     choice_3 = input("Make your choice: ")
 
+
     if(choice_3 == '1'):
         alignment += 1
         companions.append("Ted")
-        print("Bob has joined the party")#placeholder
+        print("Fueled by righteous anger, you choose to fight and defy the guards and Seraphim Wrathborne, refusing to submit to their unjust authority and treatment of you so far. Enough is enough. \nYou charge the guards first deeming that they are probably the easier opponents. Despite your efforts, you find yourself overwhelmed by the sheer number and ferocity of your adversaries.\n Despite landing several powerful blows and fighting with Gods blessing, you are ultimately overpowered by the combined strength of the guards and Seraphim Wrathborne. \nBound and restrained, you are dragged away to face the consequences of your choices. Your treatment is driving you to hate the church.")#placeholder
         break
-    
+   
     elif(choice_3 == '2'):
         alignment -= 1
         towns_removed = towns.pop("town 3")
-        print("Bob's town was destroyed")#placeholder
+        print("Recognizing the futility of resistance in the face of overwhelming force, you choose to calm down and try to pursue a diplomatic solution. \nYou tell yourself that King will be more reasonable once you speak with him in person.\n With a steady resolve, you allow yourself to be escorted to the dungeons, where you plan to peacefully await the opportunity to clear up the misconceptions surrounding their arrest ")#placeholder
         break
     elif(choice_3) == "exit": #option to exit
         exit()
     else:
         print("Invalid input.")
-        
+       
 print(alignment)
 
-#Fourth story choice 
+
+#Fourth story choice
+
 while(True):
     story_4()
     choice_4 = input("Make your choice: ")
