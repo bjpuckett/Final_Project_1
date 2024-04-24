@@ -195,13 +195,11 @@ while(True):
 
         if(story_3_version_2_choice == '1'):
             alignment += 1
-            companions.append("Ted")
             print("Fueled by righteous anger, you choose to fight and defy the guards, refusing to submit to their unjust authority and treatment of you and Emberton Draconis. \nEnough is enough! You charge the guards first deeming that they are probably the easier opponents. \nDespite your efforts, your party find themselves overwhelmed by the sheer number and ferocity of your adversaries. Despite landing several powerful blows and fighting with Gods blessing, you are ultimately overpowered by the combined strength of the guards and inquisitors. \nBound and restrained, you and Emberton Draconis are dragged away to face the consequences of your choices. Your treatment is driving you to hate the church.")#placeholder
             break
    
         elif(story_3_version_2_choice == '2'):
             alignment -= 1
-            towns_removed = towns.pop("town 3")
             print("Recognizing the futility of resistance in the face of overwhelming force, you choose to calm down and try to pursue a diplomatic solution. \nYou tell yourself that King will be more reasonable once you speak with him in person. With a steady resolve, you allow yourself to be escorted to the dungeons, where you plan to peacefully await the opportunity to clear up the misconceptions surrounding their arrest.\n You assure Emberton Draconis that everything will be ok and you will clear things up and speak on his behalf.")#placeholder
             break
         elif(choice_3) == "exit": #option to exit
