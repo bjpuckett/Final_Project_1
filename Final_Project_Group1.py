@@ -93,14 +93,14 @@ while(True):
 
     if(choice_2 == '1'):
         alignment += 1
-        companions.append("Damien")
-        print("You learn that the priest is a warrior for the church called an inquisitor. He was heading to the capital city when he was attacked by the lizard. He tells you his name is Damien and joins you as you head toward the capital city Cathedralis")
+        companions.append("Seraphim Wrathborne")
+        print("You learn that the priest is a warrior for the church called an inquisitor, Seraphim Wrathborne He was heading to the capital city when he was attacked by the lizard. He tells you his name is Damien and joins you as you head toward the capital city Cathedralis")
         break
     
     elif(choice_2 == '2'):
         alignment -= 1
-        companions.append("Talon")
-        print("The lizard tells you his name is Talon and joins you on your quest as you head towards Cathedralis")#placeholder
+        companions.append("Emberton Draconis")
+        print("The lizard tells you his name is Emberton Draconis and joins you on your quest as you head towards Cathedralis")#placeholder
         break
     elif(choice_2) == "exit": #option to exit
         exit()
@@ -200,3 +200,4 @@ while(True):
             print("The world remains the same")
             break
     break
+
