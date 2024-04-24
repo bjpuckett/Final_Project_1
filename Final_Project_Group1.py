@@ -50,13 +50,6 @@ def story_5():
     print("2: 2nd option")
 
 
-# testing alingment system and placeholder for endings
-def endings():
-    print("\nStory text")
-    print("1: lastchoice1")
-    print("2: lastchoice2")
-
-
 while(True):
     print_menu()
     menu_options = input("Select 1 or 2: ")
@@ -232,33 +225,24 @@ while(True):
        
 print(alignment)
 while(True):
-    # ending choice
-    endings()
-    lastchoice_1 = input("Make your choice: ")
-
-
-    if(lastchoice_1 == '1'):
-        print("Ends the story with chosen 1")
-
-
-    elif(lastchoice_1 == '2'):
-        print("ends the story with chosen story 2")
-
-
-    elif(lastchoice_1) == "exit": #option to exit
-        exit()
-
-
+    # ending
     # basic alignment check to determine the ending        
     while(True):
-        if(alignment == 1):
-            print("The world has imploded")
+        if(alignment >= 1):
+            print("You pledge your allegiance to humanity and vow to defend the city against the invading demi-human army. \nYour decision to help humanity signifies to Dominaris that humans are worth saving. \nWith a great flash of light, he descends from the heavens up the battlefield. All who witness are in awe of this omnipotent being. \nDominaris tells the demi-human army to leave or they will face his wrath. \nDominaris snaps his fingers and all statues, literature, and temples dedicated to Baal begin to crumble and disintegrate across Troika")
             break
-       
-        elif(alignment == -1):
-            print("The world remains the same")
+        
+        elif(alignment <= -1):
+            print("You pledge your allegiance to the demi-humans, recognizing their worth and standing against the oppressive ways of humanity. \nYour decision reverberates across the realms, signaling to Dominaris that humans are no longer deserving of his favor and love. \nWith a great flash of light, Dominaris descends from the heavens onto the battlefield, a radiant figure of divine power. \nAll who behold his presence are filled with awe and fear.")
+            print("Dominaris curses the humans and rebukes them for their wickedness. \nHe claps his hands together mightily and unleashes a wave of energy that shakes the earth, causing all statues, literature, \nand temples dedicated to Baal, the god of humanity, to crumble and disintegrate across (world name). \nThe once mighty symbols of human pride and arrogance now lie in ruins, a testament to the consequences of their hubris. God speaks the word DEATH and all human life begins to turn into dust and fade away")
             break
+        
+        elif(alignment == 0):
+            print("In an unexpected turn of events. You open your eyes and realize that you are infact the god of Troika.")
+            break
+        
     break
+
 
 
 
