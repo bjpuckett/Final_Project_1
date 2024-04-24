@@ -1,7 +1,9 @@
 alignment = 0
 player_character = "Def"
 companions = []
-towns = {"town 1": "Corinth","town 2":"Cathedralis","town 3": "Beezlebub","town 4": "Tom's House","town 5": "Billybob Home"}
+towns = {"town 1": "Corinth","town 2":"Cathedralis","town 3": "Beezlebub",}
+
+
 
 
 # Creates a selection menu for the user.
@@ -9,6 +11,8 @@ def print_menu():
     print("\nMain Menu")
     print("1. Start Game")
     print("2. Exit")
+
+
 
 
 # Defining story functions/choices.
@@ -19,11 +23,15 @@ def story_1():
     print("2: Use Mental Manipulation to delve into the villagers’ minds, seeking the source of their affliction and attempting to free them from its grasp.")
 
 
+
+
 def story_2():
     print("\nYou leave the village headed East toward the capital city of Cathedralis. The village chief explained that the church called Conclave of Sanctification reigns supreme over the land of Troika.\nThe church originally were worshipers of Plegathon, but slowly began to change, abandoning Plegathon and creating their own God to worship.\nThe Conclave of Sanctification began a holy war against the demi-humans around 13 years ago, deeming them as unholy abominations. The Vatican mercilessly persecutes any non-human species and those who support them.")
     print("\nYour journey to Cathedralis you enter a forest. You have been traveling through the forest for five days.\n You are hating yourself for not asking to take some kind of beast for transportation, you hear a loud commotion. You hear the sound of metal clashing against metal and a frightening scream.\nYou quickly run to inspect what is going on. You surprisingly find yourself at the end of the forest in a beautiful valley. You scan the area and you find what alarmed you.\nYou spot two people engaged in mortal combat. One person is a human, who looks to be dressed in some type of clerical robes bleeding on the ground crawling potentially on the verge of death.\nThe human is crying to you to save him. The other is a being who resembles a large lizard clad in bright red armor. The lizard looks at you and raises his axe prepared to deal a death blow to a defenseless human.")
     print("\n1: Cast Heal on Human!")
     print("\n2: Cast Mental Manipulation on Lizard")
+
+
 
 
 def story_3():
@@ -32,16 +40,28 @@ def story_3():
     print("\n2: Peacefully Comply\n")
 
 
+
+
 def story_3_version_2():
     print("\nAs the party continues their journey toward Cathedralis, they encounter a checkpoint manned by the Conclave of Sanctification's guards. The guards see you with Emberton Draconis the lizard and immediately raise their weapons. \nYou explain who you are, and the quest given to you by Dominaris. You soon realize that this was a mistake. The guards are not listening at all.  The guards immediately take up fighting stances and cast binding magic on you. \nHERETIC! HERETIC! HERETIC! The guards start shouting.  Despite your efforts to explain your mission, you are accused of being a sympathizer of the demi-humans and branded a heretic against the church for talking about another god. \nAs tensions rise you feel your anger and disbelief spilling over.")
     print("\n1: Fight!\n")
     print("\n2: Peacefully Comply\n")
 
 
+
+
 def story_4():
-    print("\nStory text")
-    print("1: 1st option")
-    print("2: 2nd option")
+    print("\nThrown into the dungeons of Cathedralis, you find yourself in a grim and oppressive environment. The jailers, loyal to the Conclave, subject you to harsh treatment, including physical abuse, deprivation of food and water, and psychological torment.\n You cant fathom why you are being treated like this. You face your own internal struggles as you reflect on the choices that led you to this point and question if they are worth saving. \nYou curse the church and Seraphim Wrathborne. They have forgotten who Dominaris is. Can they repent you wonder? The church presents you with an option: ")
+    print("\n1: Serve the church")
+    print("\n2: remain in prison and wait for trial where you will most likely be executed.")
+
+
+def story_4_version_2():
+    print("\nThrown into the dungeons of Cathedralis, you and Emberton Draconis find themselves in a grim and oppressive environment. The jailers, loyal to the Conclave, subject them to harsh treatment, including physical abuse, deprivation of food and water, and psychological torment. \nThe party's belongings are confiscated, and they are stripped of their weapons and magical items. Separated from each other in different cells, you and Emberton Draconis must endure solitary confinement while grappling with their fears and doubts. \nEach member faces their internal struggles as they reflect on the choices that led them to this point and question their faith in their cause. \nYou hear the cries of Emberton Draconis and many other demi-humans locked away in the prison. The treatment and the horrific scenes you see have made you sick to your stomach.")
+    print("\n1: Serve the church, betray Emberton Draconis.")
+    print("\n2: Remain in prison and wait for trial where you and Emberton Draconis will most likely be executed.")
+
+
 
 
 def story_5():
@@ -50,9 +70,13 @@ def story_5():
     print("2: 2nd option")
 
 
+
+
 while(True):
     print_menu()
     menu_options = input("Select 1 or 2: ")
+
+
 
 
     # Selects option 1 and asks the user to enter a name.
@@ -72,12 +96,18 @@ while(True):
         print("Invalid input. Try again.")
 
 
+
+
 # Defining 1st story function/choice.
+
+
 
 
 while(True):
     story_1()
     choice_1 = input("Make your choice: ")
+
+
 
 
     if(choice_1 == '1'):
@@ -96,12 +126,16 @@ while(True):
         print("Invalid input.")
 
 
+
+
 # Testing alignment changes properly.
 print(alignment)
 #Second story choice
 while(True):
     story_2()
     choice_2 = input("Make your choice: ")
+
+
 
 
     if(choice_2 == '1'):
@@ -123,6 +157,8 @@ while(True):
         print("Invalid input.")
 
 
+
+
 print(alignment)
 #Third story choice
 while(True):
@@ -131,15 +167,15 @@ while(True):
         choice_3 = input("Make your choice: ")
 
 
+
+
         if(choice_3 == '1'):
             alignment += 1
-            companions.append("Ted")
             print("Fueled by righteous anger, you choose to fight and defy the guards and Seraphim Wrathborne, refusing to submit to their unjust authority and treatment of you so far. Enough is enough. \nYou charge the guards first deeming that they are probably the easier opponents. Despite your efforts, you find yourself overwhelmed by the sheer number and ferocity of your adversaries.\n Despite landing several powerful blows and fighting with Gods blessing, you are ultimately overpowered by the combined strength of the guards and Seraphim Wrathborne. \nBound and restrained, you are dragged away to face the consequences of your choices. Your treatment is driving you to hate the church.")#placeholder
             break
    
         elif(choice_3 == '2'):
             alignment -= 1
-            towns_removed = towns.pop("town 3")
             print("Recognizing the futility of resistance in the face of overwhelming force, you choose to calm down and try to pursue a diplomatic solution. \nYou tell yourself that King will be more reasonable once you speak with him in person.\n With a steady resolve, you allow yourself to be escorted to the dungeons, where you plan to peacefully await the opportunity to clear up the misconceptions surrounding their arrest ")#placeholder
             break
         elif(choice_3) == "exit": #option to exit
@@ -148,9 +184,13 @@ while(True):
             print("Invalid input.")
 
 
+
+
     elif(choice_2 == '2'):
         story_3_version_2()
         story_3_version_2_choice = input("Make your choice: ")
+
+
 
 
         if(story_3_version_2_choice == '1'):
@@ -170,60 +210,53 @@ while(True):
             print("Invalid input.")
 
 
-       
-    print(alignment)
+
 
 
 #Fourth story choice
-
-
 while(True):
-    story_4()
-    choice_4 = input("Make your choice: ")
+    if(choice_2 == '1'):
+        story_4()
+        choice_4 = input("Make your choice: ")
 
 
-    if(choice_4 == '1'):
-        alignment += 1
-        companions.append("Tom")
-        print("Bob has joined the party")#placeholder
-        break
+
+
+        if(choice_4 == '1'):
+            alignment += 1
+            break
    
-    elif(choice_4 == '2'):
-        alignment -= 1
-        towns_removed = towns.pop("town 4")
-        print("Bob's town was destroyed")#placeholder
-        break
-    elif(choice_4) == "exit": #option to exit
-        exit()
-    else:
-        print("Invalid input.")
-       
-print(alignment)
+        elif(choice_4 == '2'):
+            alignment -= 1
+            break
+        elif(choice_4) == "exit": #option to exit
+            exit()
+        else:
+            print("Invalid input.")
 
 
-#Fifth story choice
-while(True):
-    story_5()
-    choice_5 = input("Make your choice: ")
 
 
-    if(choice_5 == '1'):
-        alignment += 1
-        companions.append("Billybob")
-        print("Bob has joined the party")#placeholder
-        break
+    elif(choice_2 == '2'):
+        story_4_version_2()
+        story_4_version_2_choice = input("Make your choice: ")
+
+
+
+
+        if(story_4_version_2_choice == '1'):
+            alignment += 1
+            break
    
-    elif(choice_5 == '2'):
-        alignment -= 1
-        towns_removed = towns.pop("town 5")
-        print("Bob's town was destroyed")#placeholder
-        break
-    elif(choice_5) == "exit": #option to exit
-        exit()
-    else:
-        print("Invalid input.")
-       
-print(alignment)
+        elif(story_4_version_2_choice == '2'):
+            alignment -= 1
+            break
+        elif(story_4_version_2_choice) == "exit": #option to exit
+            exit()
+        else:
+            print("Invalid input.")
+
+
 while(True):
     # ending
     # basic alignment check to determine the ending        
@@ -231,18 +264,14 @@ while(True):
         if(alignment >= 1):
             print("You pledge your allegiance to humanity and vow to defend the city against the invading demi-human army. \nYour decision to help humanity signifies to Dominaris that humans are worth saving. \nWith a great flash of light, he descends from the heavens up the battlefield. All who witness are in awe of this omnipotent being. \nDominaris tells the demi-human army to leave or they will face his wrath. \nDominaris snaps his fingers and all statues, literature, and temples dedicated to Baal begin to crumble and disintegrate across Troika")
             break
-        
+       
         elif(alignment <= -1):
             print("You pledge your allegiance to the demi-humans, recognizing their worth and standing against the oppressive ways of humanity. \nYour decision reverberates across the realms, signaling to Dominaris that humans are no longer deserving of his favor and love. \nWith a great flash of light, Dominaris descends from the heavens onto the battlefield, a radiant figure of divine power. \nAll who behold his presence are filled with awe and fear.")
             print("Dominaris curses the humans and rebukes them for their wickedness. \nHe claps his hands together mightily and unleashes a wave of energy that shakes the earth, causing all statues, literature, \nand temples dedicated to Baal, the god of humanity, to crumble and disintegrate across (world name). \nThe once mighty symbols of human pride and arrogance now lie in ruins, a testament to the consequences of their hubris. God speaks the word DEATH and all human life begins to turn into dust and fade away")
             break
-        
+       
         elif(alignment == 0):
             print("In an unexpected turn of events. You open your eyes and realize that you are infact the god of Troika.")
             break
-        
+       
     break
-
-
-
-
